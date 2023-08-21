@@ -1,5 +1,3 @@
-export const prerender = true;
-
 <nav>
 	<div class="container large">
 		<div class="nav-container">
