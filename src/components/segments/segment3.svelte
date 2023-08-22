@@ -32,8 +32,8 @@
 			</div>
 			<div>
 				<p class="info">
-					The first 1000 sign ups will recieve first hand access to Waycay and
-					WaycAI during a closed beta
+					The first <b style:color="var(--primary-100)">1000 sign ups</b> will recieve
+					early access to Waycay and WaycAI, dont miss out!
 				</p>
 			</div>
 			<input type="submit" value="Sign me up!" />

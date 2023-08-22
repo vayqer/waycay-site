@@ -4,26 +4,28 @@
 </script>
 
 <div class="container margin w-100 text-center">
-	<Saos
-		animation={"slide-top 400ms ease both"}
-		top={300}
-		animation_out={"slide-top-out 400ms ease both"}
-	>
-		<h2>The Waycay app</h2>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-			convallis lacus vel finibus vulputate. Sed hendrerit, sem sit amet lacinia
-			mattis, erat leo pharetra justo, ac suscipit arcu quam eu lorem. Phasellus
-			ac orci quam. Vestibulum vestibulum ut purus eu suscipit.
-		</p>
-		<div class="buttons">
-			<CustomButton width="20rem" text="Coming soon to iOS" />
-			<CustomButton width="20rem" text="Coming soon to Android" />
-		</div>
-	</Saos>
+	<p class="info">
+		Get ready to revolutionize the way you travel with the Waycay app. It's more
+		than an app; it's your ultimate travel companion, empowering you to
+		discover, connect, and experience the world like never before.
+	</p>
+	<div class="buttons">
+		<CustomButton width="20rem" text="Coming to iOS" onClick />
+		<CustomButton width="20rem" text="Coming to Android" onClick />
+	</div>
 </div>
 
 <style>
+	.container {
+		margin-top: 10rem;
+		margin-bottom: 10rem;
+	}
+	.info {
+		font-size: 2em;
+		font-family: "Libre Baskerville", serif;
+		line-height: 2em;
+		color: var(--gray-500);
+	}
 	.buttons {
 		display: inline-flex;
 		flex-wrap: wrap;

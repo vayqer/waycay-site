@@ -1,9 +1,7 @@
 <nav>
 	<div class="container large">
 		<div class="nav-container">
-			<a>About</a>
 			<a class="waycay">Waycay</a>
-			<a>App</a>
 		</div>
 	</div>
 </nav>

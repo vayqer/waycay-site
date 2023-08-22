@@ -22,7 +22,7 @@ body {
 h1,
 h2,
 h3 {
-	color: white;
+	color: var(--gray-200);
 }
 
 h1 {
@@ -40,7 +40,7 @@ h3 {
 .custom-button,
 button,
 p {
-	font-family: "Libre Baskerville", serif;
+	font-family: "Open Sans", serif;
 	color: var(--gray-100);
 	line-height: 1.6rem;
 }
@@ -76,6 +76,9 @@ input {
 }
 .mt-0 {
 	margin-top: 0;
+}
+.mt-3 {
+	margin-top: 3em;
 }
 
 @-webkit-keyframes slide-top {
@@ -172,6 +175,55 @@ input {
 	100% {
 		-webkit-transform: translateX(100px);
 		transform: translateX(100px);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes slide-right {
+	0% {
+		-webkit-transform: translateX(-100px);
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+@keyframes slide-right {
+	0% {
+		-webkit-transform: translateX(-100px);
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+@-webkit-keyframes slide-right-out {
+	0% {
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: translateX(-100px);
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+}
+@keyframes slide-right-out {
+	0% {
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: translateX(-100px);
+		transform: translateX(-100px);
 		opacity: 0;
 	}
 }
