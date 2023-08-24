@@ -5,9 +5,9 @@
 
 <div class="container margin w-100 text-center">
 	<p class="info">
-		Get ready to revolutionize the way you travel with the Waycay app. It's more
-		than an app; it's your ultimate travel companion, empowering you to
-		discover, connect, and experience the world like never before.
+		Exclusivity meets excellence with Waycay. Discover a world where luxury and
+		beauty converge – because only the best locations are fit for Waycay
+		travelers. Your journey, elevated.
 	</p>
 	<div class="buttons">
 		<CustomButton width="20rem" text="Coming to iOS" onClick />
@@ -31,5 +31,16 @@
 		flex-wrap: wrap;
 		gap: 2rem;
 		justify-content: center;
+	}
+	@media (max-width: 768px) {
+		.info {
+			font-size: 1.2em;
+			margin: 0;
+			padding: 1rem;
+			padding-bottom: 2em;
+		}
+		.container {
+			margin-bottom: 0;
+		}
 	}
 </style>

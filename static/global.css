@@ -1,4 +1,6 @@
 :root {
+	--primary-0: #fffaf4;
+	--primary-50: #fff2e5;
 	--primary-100: #ffd9b2;
 	--primary-400: #dd8632;
 
@@ -12,6 +14,8 @@
 	--gray-900: #262019;
 
 	--blue-200: #8f96eb;
+
+	--gold-100: #ffce00;
 }
 
 body {
@@ -23,6 +27,9 @@ h1,
 h2,
 h3 {
 	color: var(--gray-200);
+}
+.color-white {
+	color: white;
 }
 
 h1 {
@@ -73,6 +80,9 @@ input {
 }
 .ml-auto {
 	margin-left: auto;
+}
+.mr-auto {
+	margin-right: auto;
 }
 .mt-0 {
 	margin-top: 0;

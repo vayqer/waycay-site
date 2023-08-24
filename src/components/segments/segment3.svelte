@@ -8,12 +8,7 @@
 		top={150}
 		animation_out={"slide-top-out 400ms ease both"}
 	>
-		<h2>Be there when the next generation starts</h2>
-		<p>
-			Waycay and WaycAI is under development and is being improved and worked on
-			every day. Sign up now and be notified when the application is ready for
-			release.
-		</p>
+		<h2>Be ready for the next generation</h2>
 	</Saos>
 	<Saos
 		animation={"slide-top 400ms ease both"}
@@ -50,6 +45,7 @@
 		border: none;
 		padding: 1rem 1rem;
 		width: 20rem;
+		max-width: 60vw;
 		border-image: linear-gradient(
 				to left top,
 				var(--primary-100),

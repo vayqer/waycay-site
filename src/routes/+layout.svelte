@@ -13,19 +13,7 @@
 		<h2 class="text-center">Waycay</h2>
 		<div class="footer-container">
 			<div class="footer-content">
-				<div class="links">
-					<h3>Company</h3>
-					<a>About</a>
-					<a>FAQ</a>
-					<a>Contact</a>
-				</div>
-				<div class="links">
-					<h3>Terms and Conditions</h3>
-					<a>Cookie policy</a>
-					<a>Terms and conditions</a>
-					<a>Secrecy center</a>
-				</div>
-				<div class="links ml-auto">
+				<div class="links ml-auto mr-auto text-center">
 					<h2 class="mt-0">Made in Sweden</h2>
 					<p class="metadata">
 						Waycay is being developed in Sweden by passionat roadtrippers
@@ -33,11 +21,7 @@
 				</div>
 			</div>
 		</div>
-		<p class="metadata">
-			Vayqer AB ℗ 2021. All rights reserved. Organization number: 559277-9085.
-			Stora Brogatan 9, 50330 Borås. Contact: info@vayqer.se | Site created by
-			Vayqer AB
-		</p>
+		<p class="metadata">Waycay 2023</p>
 	</div>
 
 	<div class="background" />

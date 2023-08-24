@@ -12,7 +12,7 @@
 		display: flex;
 		justify-content: start;
 		align-items: center;
-		width: fit-content;
+		width: 80px;
 	}
 	p {
 		text-align: center;

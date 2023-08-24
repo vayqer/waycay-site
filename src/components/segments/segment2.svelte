@@ -8,10 +8,14 @@
 	import UspContainer from "../uspContainer.svelte";
 	import Usp from "../usp.svelte";
 	import Icon from "@iconify/svelte";
+	import AssistantPromptInput from "../assistantPromptInput.svelte";
 </script>
 
 <div class="container margin w-100" id="segment2">
 	<div class="planning-easy">
+		<div class="column-full text-center">
+			<h2>Designed to be simple, yet powerful</h2>
+		</div>
 		<div class="column-1">
 			<Saos
 				animation={"slide-right 400ms ease both"}
@@ -28,26 +32,27 @@
 							<Destination
 								backgroundImageUrl="/assets/burger.jpg"
 								title="Gundes Burgers"
-								categories={["Food", "Burgers"]}
+								icon="fluent:food-24-filled"
 								rating={4.2}
 								distanceLabel="3.4 km from your location"
 							/>
 							<Destination
 								backgroundImageUrl="/assets/amusement.jpg"
 								title="Amusement Parksson"
-								categories={["Family"]}
+								icon="maki:amusement-park"
 								rating={4.2}
 								distanceLabel="4 km from your location"
 							/>
 							<Destination
 								backgroundImageUrl="/assets/museum.jpg"
 								title="Gundes Borgeby"
-								categories={["Museum", "History"]}
+								icon="mdi:museum"
 								rating={4.2}
 								distanceLabel="8 km from your location"
 							/>
 						</DestinationContainer>
 					</Assistant>
+					<AssistantPromptInput />
 				</ExampleTemplate>
 			</Saos>
 		</div>
@@ -109,25 +114,21 @@
 								expandAfter={4000}
 								backgroundImageUrl="/assets/views/view1.jpg"
 								title="Vondelpark"
-								categories={["Park"]}
+								icon="ic:round-park"
 								rating={4.7}
 								distanceLabel="2 km from your location"
 							/>
-						</DestinationContainer>
-						<DestinationContainer>
 							<Destination
 								backgroundImageUrl="/assets/views/view2.jpg"
 								title="Amsterdam Houses"
-								categories={["Shopping"]}
+								icon="ph:binoculars-fill"
 								rating={4.1}
 								distanceLabel="17 km from your location"
 							/>
-						</DestinationContainer>
-						<DestinationContainer>
 							<Destination
 								backgroundImageUrl="/assets/views/view3.jpg"
 								title="Raundaun View"
-								categories={["Walking", "View"]}
+								icon="mdi:mountain"
 								rating={4.2}
 								distanceLabel="5 km from your location"
 							/>
@@ -142,13 +143,12 @@
 				top={350}
 				animation_out={"slide-left-out 400ms ease both"}
 			>
-				<h3>Add suggestions to a customized trip</h3>
+				<h3>A state of the art trip planner</h3>
 				<p>
-					Transform destinations into extraordinary journeys with our innovative
-					service: "Convert destinations into unique trips." Experience the art
-					of crafting personalized adventures that reflect your interests and
-					preferences. Let us turn your undiscovered dream destinations into
-					unforgettable memories.
+					Transform destinations into extraordinary journeys. Experience the art
+					of crafting personalized roadtrips or adventures that reflect your
+					interests and preferences. Let us turn your undiscovered dream
+					destinations into unforgettable memories.
 				</p>
 				<UspContainer>
 					<Usp text="Customizeable trips"
@@ -165,8 +165,19 @@
 							icon="mdi:filter"
 						/></Usp
 					>
-					<Usp text="AI Generated trips">
-						<Icon color="var(--primary-100)" width="32" icon="ion:cog-sharp" />
+					<Usp text="Gas calculations">
+						<Icon
+							color="var(--primary-100)"
+							width="32"
+							icon="fluent:gas-24-filled"
+						/>
+					</Usp>
+					<Usp text="Multi day trip">
+						<Icon
+							color="var(--primary-100)"
+							width="32"
+							icon="ph:calendar-fill"
+						/>
 					</Usp>
 				</UspContainer>
 			</Saos>
@@ -180,7 +191,10 @@
 		display: grid;
 		grid-template-columns: 50% 50%;
 		row-gap: 2rem;
-		column-gap: 2rem;
+	}
+	.planning-easy > * {
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
 	.column-1 {
 		grid-column: 1;
@@ -191,10 +205,20 @@
 	.column-full {
 		grid-column: 1 / 3;
 	}
-	.center {
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		align-items: center;
+	@media (max-width: 1200px) {
+		.planning-easy {
+			overflow: hidden;
+		}
+	}
+	@media (max-width: 768px) {
+		.planning-easy {
+			grid-template-columns: 100%;
+		}
+		.planning-easy > * {
+			grid-column: 1;
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		}
 	}
 </style>

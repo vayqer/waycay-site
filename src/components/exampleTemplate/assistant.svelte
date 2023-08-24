@@ -7,7 +7,7 @@
 <p class="info" style:animation-delay={`${delay}s`}>WaycAI</p>
 <div class="container" style:animation-delay={`${delay}s`}>
 	<div class="answer">
-		<Icon color="var(--primary-100)" width="26" icon="tabler:brand-openai" />
+		<Icon color="var(--gray-800)" width="26" icon="tabler:brand-openai" />
 		<p>{text}</p>
 	</div>
 
@@ -35,16 +35,19 @@
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		background-color: var(--gray-900);
+		background-color: var(--primary-0);
 		animation: fade-in 1s ease;
 		animation-delay: 1.5s;
 		opacity: 0;
 		animation-fill-mode: forwards;
+		-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+		-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
 	}
 	p {
 		width: fit-content;
 		margin-right: auto;
-		color: var(--gray-100);
+		color: var(--gray-800);
 		margin: 0;
 		margin-left: 0.6em;
 	}

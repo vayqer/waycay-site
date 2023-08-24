@@ -5,7 +5,7 @@
 </script>
 
 <span class="container">
-	<Icon color="var(--primary-100)" width="22" icon="ic:round-star" /><span
+	<Icon color="var(--gold-100)" width="18" icon="ic:round-star" /><span
 		>{rating}</span
 	></span
 >
@@ -15,15 +15,19 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		color: var(--primary-100);
-		position: relative;
-		opacity: 0.6;
+		color: var(--gold-100);
+		position: absolute;
+		top: 1em;
+		left: 1em;
+		background-color: var(--gray-800);
+		border-radius: 0.7em;
+		padding: 0.2em 0.5em;
+		opacity: 0.7;
 	}
 	span:not(.container) {
 		padding-left: 0.2em;
-		margin-top: 0.1em;
 		font-weight: bold;
-		font-size: 0.8em;
+		font-size: 0.7em;
 		font-family: "Open sans";
 	}
 </style>
